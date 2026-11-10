@@ -55,7 +55,7 @@ public class Hero : MonoBehaviour
         if (other.TryGetComponent(out Item item) && !inventory.Contains(item))
         {
             inventory.Add(item);
-            item.gameObject.SetActive(false); // desaparece de la escena
+            item.gameObject.SetActive(false); 
             Debug.Log($"[Inventario] Recogido: {item.itemName} (total: {inventory.Count})");
         }
     }
